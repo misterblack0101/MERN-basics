@@ -1,0 +1,92 @@
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.nav-ul {
+  margin: 0px;
+  background-color: bisque;
+  text-align: left;
+}
+.nav-ul li a {
+  color: darkslategray;
+  padding: 5px;
+  text-decoration: none;
+}
+.logo {
+  width: 55px;
+  float: left;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.signUpBtn {
+  padding: 5px 10px 5px 10px;
+  margin: 15px;
+  width: 100px;
+  background-color: beige;
+  border: 1px solid black;
+  color: darkslategrey;
+}
+.invalid-input {
+  color: red;
+  margin-top: -16px;
+  display: block;
+  text-align: left;
+  margin-left: 22px;
+  font-size: 12px;
+}
+.inputField {
+  margin: 20px;
+  display: block;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border: 3px solid beige;
+}
+
+.login,
+.addProduct {
+  display: inline-block;
+  margin-top: 50px;
+}
+.nav-right {
+  text-align: right;
+}
+
+.products-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.products-list ul li {
+  display: inline-block;
+  border: 2px solid beige;
+  width: 120px;
+  padding: 5px;
+}
+
+.products-list ul {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.search-bar {
+  width: 400px;
+  height: 40px;
+  margin: 20px;
+  border: 2px solid slategrey;
+  border-radius: 25px;
+  text-align: center;
+}
