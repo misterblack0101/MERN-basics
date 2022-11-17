@@ -18,7 +18,6 @@ app.post("/register", async (req, resp) => {
   result = result.toObject();
   delete result.password;
   delete result.__v;
-  delete result._id;
   if (result) {
     jwt.sign({ result }, jwtKey, { expiresIn: "10h" }, (err, token) => {
       if (err) return resp.send({ result: "no User found" });
@@ -43,6 +42,7 @@ app.post("/login", async (req, resp) => {
 
 app.post("/add-product", verifyToken, async (req, resp) => {
   const prod = req.body;
+  console.log(prod);
   if (prod.name && prod.price && prod.category && prod.userId && prod.brand) {
     const product = new Product(prod);
     const result = await product.save();
